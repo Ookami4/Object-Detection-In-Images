@@ -119,7 +119,8 @@ public class Controller {
         java.util.List<Mat> result = new ArrayList<>();
         java.util.List<String> outBlobNames = getOutputNames(net);
         net.forward(result, outBlobNames);
-
+        
+        // Minimum probability to filter out weak detections. I gave a default value of 50%.
         float confThreshold = 0.3f;
 
         LinkedList<Integer> clsIds = new LinkedList<>();
@@ -160,7 +161,8 @@ public class Controller {
                 }
             }
         }
-
+        
+        //This is our non-maximum suppression threshold with a default value of 0.3
         float nmsThresh = 0.3f;
 
         MatOfFloat confidences = new MatOfFloat(Converters.vector_float_to_Mat(confs));
