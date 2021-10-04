@@ -1,8 +1,6 @@
 # Object-Detection-In-Images
 
-
-# La detection et reconnaissance des objets dans une image donnée
-le projet est réalisé par : 
+le sujet du projet est la detection et reconnaissance des objets dans une image donnée, celui-ci est réalisé par : 
 1. __El Khanoussi Redouan__
 2. __Moulay Taj Zakariae__
 3. __Bahadi Ibrahim__
